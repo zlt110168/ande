@@ -1,96 +1,147 @@
 /* colors */
-$1--color-white:#ffffff;
-$--color-white: #ffffff;
-$1--color-black:#222326;
-$--color-black: #222326;
-$1--color-primary-light-1:#2763a4;
-$--color-primary-light-1: #2763a4;
-$1--color-primary:#308df2;
-$--color-primary: #308df2;
-$1--color-primary-light-2:#246dbd;
-$--color-primary-light-2: #246dbd;
-$1--color-primary-light-3:#1f77d8;
-$--color-primary-light-3: #1f77d8;
-$1--color-primary-light-4:#2482e9;
-$--color-primary-light-4: #2482e9;
-$1--color-primary-light-5:#308df2;
-$--color-primary-light-5: #308df2;
-$1--color-primary-light-6:#61a8f6;
-$--color-primary-light-6: #61a8f6;
-$1--color-primary-light-7:#92c3f9;
-$--color-primary-light-7: #92c3f9;
-$1--color-primary-light-8:#c3defc;
-$--color-primary-light-8: #c3defc;
-$1--color-primary-light-9:#f5f9fe;
-$--color-primary-light-9: #f5f9fe;
+@--color-white: #ffffff;
+@--color-black: #222326;
+@--color-primary-light-1: #2763a4;
+@--color-primary: #308df2;
+@--color-primary-light-2: #246dbd;
+@--color-primary-light-3: #1f77d8;
+@--color-primary-light-4: #2482e9;
+@--color-primary-light-5: #308df2;
+@--color-primary-light-6: #61a8f6;
+@--color-primary-light-7: #92c3f9;
+@--color-primary-light-8: #c3defc;
+@--color-primary-light-9: #f5f9fe;
 /* FigmaAutoLayout */
 $16: [object Object];
 $没边距: [object Object];
 $08: [object Object];
 $04: [object Object];
-/* colors */
-$品牌色: #308df2;
-$告警: #ed9b1f;
-$成功: #21d971;
-$危险: #ff4d59;
-$信息: #909399;
-$白色: #ffffff;
-$白色-600: #f9f9f9;
-$白色-700: #f2f2f2;
-$白色-800: #ececec;
-$白色-900: #e6e6e6;
-$黑色: #222326;
-$黑色-400: #d0d2d6;
-$黑色-300: #a2a5ad;
-$黑色-200: #747883;
-$黑色-100: #4b4d54;
-$品牌色-600: #2482e9;
-$品牌色-700: #1f77d8;
-$品牌色-800: #246dbd;
-$品牌色-900: #2763a4;
-$品牌色-400: #f5f9fe;
-$品牌色-300: #c3defc;
-$品牌色-200: #92c3f9;
-$品牌色-100: #61a8f6;
-$成功-400: #e6fef0;
-$成功-300: #7cf3b0;
-$告警-400: #fff5e7;
-$告警-300: #f9c980;
-$危险-400: #fff8f8;
-$危险-300: #ffa2a9;
-$信息-400: #f3f4f5;
-$信息-300: #c0c3c9;
-$透明: #ffffff00;
-/* colors */
-$品牌色: #308df2;
-$告警: #ed9b1f;
-$成功: #21d971;
-$危险: #ff4d59;
-$信息: #909399;
-$白色: #ffffff;
-$白色-600: #f9f9f9;
-$白色-700: #f2f2f2;
-$白色-800: #ececec;
-$白色-900: #e6e6e6;
-$黑色: #222326;
-$黑色-400: #d0d2d6;
-$黑色-300: #a2a5ad;
-$黑色-200: #747883;
-$黑色-100: #4b4d54;
-$品牌色-600: #2482e9;
-$品牌色-700: #1f77d8;
-$品牌色-800: #246dbd;
-$品牌色-900: #2763a4;
-$品牌色-400: #f5f9fe;
-$品牌色-300: #c3defc;
-$品牌色-200: #92c3f9;
-$品牌色-100: #61a8f6;
-$成功-400: #e6fef0;
-$成功-300: #7cf3b0;
-$告警-400: #fff5e7;
-$告警-300: #f9c980;
-$危险-400: #fff8f8;
-$危险-300: #ffa2a9;
-$信息-400: #f3f4f5;
-$信息-300: #c0c3c9;
-$透明: #ffffff00;
+/* Shadows */
+$下横线: inset 0px -1px 0px 0px #e6e6e6;
+$上横线: inset 0px 1px 0px 0px #e6e6e6;
+$tab: inset 0px 1px 0px 0px #e6e6e6, inset -1px 0px 0px 0px #e6e6e6, inset 1px 0px 0px 0px #e6e6e6;
+/* Borders */
+$solid-1: 1px solid;
+/* BorderRadiuses */
+$radius-4: 4px;
+$radius-100: 100px;
+/* fonts */
+$primary-font: PingFang SC;
+$secondary-font: PingFang SC;
+$noto-sans-sc-400: Noto Sans SC;
+$noto-sans-sc-500: Noto Sans SC;
+/* text styles*/
+@mixin 标题-1-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 24px;
+  lineHeight: 28px;
+  letterSpacing : 0em;
+}
+@mixin 标题-2-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 22px;
+  lineHeight: 28px;
+  letterSpacing : 0em;
+}
+@mixin 标题-3-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 20px;
+  lineHeight: 24px;
+  letterSpacing : 0em;
+}
+@mixin 主题-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 18px;
+  lineHeight: 24px;
+  letterSpacing : 0em;
+}
+@mixin 副主题-粗() {
+  fontFamily : $secondary-font;
+  fontSize : 16px;
+  lineHeight: 20px;
+  letterSpacing : 0em;
+}
+@mixin 正文-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 14px;
+  lineHeight: 20px;
+  letterSpacing : 0em;
+}
+@mixin 说明-粗() {
+  fontFamily : $noto-sans-sc-500;
+  fontSize : 13px;
+  lineHeight: 16px;
+  letterSpacing : 0em;
+}
+@mixin 描述-粗() {
+  fontFamily : $secondary-font;
+  fontSize : 12px;
+  lineHeight: 16px;
+  letterSpacing : 0em;
+}
+@mixin 标题-1-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 24px;
+  lineHeight: 28px;
+  letterSpacing : 0em;
+}
+@mixin 标题-2-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 22px;
+  lineHeight: 28px;
+  letterSpacing : 0em;
+}
+@mixin 标题-3-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 20px;
+  lineHeight: 24px;
+  letterSpacing : 0em;
+}
+@mixin 主题-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 18px;
+  lineHeight: 24px;
+  letterSpacing : 0em;
+}
+@mixin 副主题-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 16px;
+  lineHeight: 20px;
+  letterSpacing : 0em;
+}
+@mixin 正文-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 14px;
+  lineHeight: 20px;
+  letterSpacing : 0em;
+}
+@mixin 说明-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 13px;
+  lineHeight: 16px;
+  letterSpacing : 0em;
+}
+@mixin 描述-常规() {
+  fontFamily : $noto-sans-sc-400;
+  fontSize : 12px;
+  lineHeight: 16px;
+  letterSpacing : 0em;
+}
+/* SpacePatterns */
+$none: 0px;
+$xx-small: 1px;
+$x-small: 2px;
+$small: 4px;
+$regular: 8px;
+$large: 16px;
+$x-large: 32px;
+$xx-large: 64px;
+/* FigmaAutoLayout */
+16
+$16: [object Object];
+0
+$没边距: [object Object];
+8
+$08: [object Object];
+4
+$04: [object Object];
