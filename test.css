@@ -1,1 +1,22 @@
+:root{
+    --el-font-size-extra-large: 20px;
+	--el-font-size-large: 18px;
+	--el-font-size-medium: 16px;
+	--el-font-size-base: 19px;
+	--el-font-size-small: 17px;
+	--el-font-size-extra-small: 16px;
+}
 
+.el-table {
+	--el-table-border-color: var(--el-border-color-lighter);
+	--el-table-border: 4px solid red;
+	--el-table-font-color: green;
+	--el-table-header-font-color: blue;
+	--el-table-row-hover-background-color:pink;
+	--el-table-current-row-background-color: yellow;
+	--el-table-header-background-color: yellow;
+	--el-table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+	--el-table-background-color: pink;
+	--el-table-tr-background-color: yellow;
+	--el-table-expanded-cell-background-color: red;
+}
