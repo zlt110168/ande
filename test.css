@@ -20,3 +20,6 @@
 	--el-table-tr-background-color: yellow;
 	--el-table-expanded-cell-background-color: red;
 }
+*{
+background:red;
+}
